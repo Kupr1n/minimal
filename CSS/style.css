@@ -113,7 +113,6 @@ footer form{
             1px 1px #8BCAC3,
             2px 2px #8BCAC3,
             3px 3px #8BCAC3;
-    -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
 .footer_img{
@@ -264,9 +263,6 @@ footer form{
     text-transform: uppercase;
     padding-top: 38px;
 }
-.brands_img{
-    margin-left: 20px;
-}
 .brands_p{
     font-family: 'Vollkorn', serif;
     font-style: normal;
@@ -332,4 +328,7 @@ footer form{
 }
 .project_pictures3{
     margin-bottom: 89px;
+}
+.brands_article{
+    max-width: 300px;
 }
