@@ -322,6 +322,7 @@ footer form{
     text-align: center;
     color: #333333;
     padding-bottom: 21px;
+    padding-top: 4px;
 }
 .project_pictures2, .project_pictures3{
     margin-top: 20px;
@@ -331,4 +332,10 @@ footer form{
 }
 .brands_article{
     max-width: 300px;
+}
+.flex_container_project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
