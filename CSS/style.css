@@ -214,8 +214,12 @@ footer form{
     border-bottom: solid 2px #47474F;
     text-decoration: none;
 }
-.brands{
+.brands {
     text-align: center;
+}
+h4{
+    text-transform: uppercase;
+    padding-top: 38px;
 }
 .brands_title{
     font-family: 'montserratregular', serif;
@@ -247,10 +251,6 @@ footer form{
     text-align: center;
     text-transform: uppercase;
     color: #333333;
-}
-.brands h4{
-    text-transform: uppercase;
-    padding-top: 38px;
 }
 .brands_p{
     font-family: 'Vollkorn', serif;
@@ -301,7 +301,6 @@ footer form{
     text-transform: uppercase;
     color: #333333;
     padding-top: 19px;
-    padding-top: 113px;
 }
 .project p{
     font-family: 'Vollkorn', serif;
