@@ -466,6 +466,10 @@ footer {
   max-height: 511px;
   display: flex;
   justify-content: space-between;
+  @include max-screen(520px){
+    max-height: 700px;
+  }
+
 }
 
 .comments_right_h3 {
