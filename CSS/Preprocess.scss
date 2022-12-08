@@ -46,6 +46,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include max-screen(480px) {
+
+  }
+  @include max-screen(970px) {
+    justify-content: space-around;
+  }
 }
 
 #navbar {
@@ -238,6 +244,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+  @include max-screen(900px) {
+    padding: 40px 20px;
+  }
 
   p {
     font-family: $main_font2;
@@ -268,6 +277,9 @@ footer {
 
 .brands {
   text-align: center;
+  @include max-screen(900px) {
+    margin: 0 20px;
+  }
 
   h4 {
     text-transform: uppercase;
@@ -379,6 +391,9 @@ footer {
 
 .project_pictures2, .project_pictures3 {
   margin-top: 20px;
+  @include max-screen(900px) {
+    margin-top: 0;
+  }
 }
 
 .project_pictures3 {
@@ -394,6 +409,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @include max-screen(900px) {
+    justify-content: space-around;
+  }
+  @include max-screen(600px) {
+    justify-content: center;
+  }
 }
 
 .team {
@@ -466,10 +487,9 @@ footer {
   max-height: 511px;
   display: flex;
   justify-content: space-between;
-  @include max-screen(520px){
-    max-height: 700px;
+  @include max-screen(660px) {
+    max-height: 100%;
   }
-
 }
 
 .comments_right_h3 {
@@ -481,6 +501,12 @@ footer {
   text-align: center;
   color: #333333;
   padding: 196px 52px 24px 0;
+  @include max-screen(600px) {
+    padding: 156px 0 24px 0;
+  }
+  @include max-screen(400px) {
+    padding: 156px 0 24px 30px;
+  }
 }
 
 .comments_left_h4 {
@@ -492,6 +518,9 @@ footer {
   text-align: center;
   color: #333333;
   padding: 196px 0 24px 0;
+  @include max-screen(670px) {
+    padding: 40px 0 24px 0;
+  }
 }
 
 .comments_name_right {
@@ -516,11 +545,19 @@ footer {
   text-transform: uppercase;
   color: #ABABAB;
   padding-top: 10px;
+  @include max-screen(600px) {
+    padding-bottom: 30px;
+  }
 }
 
 .flex_container_comments {
   display: flex;
   text-align: center;
+  @include max-screen(700px) {
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+  }
 }
 
 .line_comment {
@@ -535,6 +572,10 @@ footer {
     margin-top: 141px;
     margin-bottom: 98px;
   }
+
+  @include max-screen(700px) {
+    display: none;
+  }
 }
 
 .fix_img {
@@ -544,6 +585,12 @@ footer {
   right: 50%;
   margin-right: -50px;
   margin-top: 69px;
+  @include max-screen(670px) {
+    right: 55%;
+  }
+  @include max-screen(500px) {
+    right: 57%;
+  }
 }
 
 .lets {
@@ -552,14 +599,12 @@ footer {
   text-align: center;
   min-height: 600px;
   position: relative;
-  @include max-screen(768px) {
-    flex-direction: column;
-  }
-
-  article {
-    margin-right: 25px;
-  }
 }
+
+article {
+  margin-right: 25px;
+}
+
 
 .lets_title {
   font-family: $main_font1;
@@ -606,6 +651,9 @@ footer {
   line-height: 22px;
   text-align: center;
   color: #212121;
+  @include max-screen(470px) {
+    padding-bottom: 20px;
+  }
 }
 
 .lets_mail_h4 {
@@ -641,6 +689,9 @@ footer {
   text-align: center;
   color: #212121;
   padding-bottom: 75px;
+  @include max-screen(470px) {
+    padding-bottom: 20px;
+  }
 }
 
 .lets_social_h4 {
@@ -661,6 +712,7 @@ footer {
   flex-direction: column;
   list-style: none;
   align-items: baseline;
+
   li {
     font-family: $main_font2;
     font-style: normal;
@@ -670,6 +722,7 @@ footer {
     color: #212121;
   }
 }
+
 .fix1 {
   &:before {
     content: "";
@@ -680,8 +733,23 @@ footer {
     margin-right: 9px;
   }
 }
+
 .fix2 {
   padding-top: 18px;
+  margin-left: 25px;
+  @include max-screen(470px) {
+    margin-left: 175px;
+    @include max-screen(440px) {
+      margin-left: 165px;
+    }
+    @include max-screen(410px) {
+      margin-left: 155px;
+    }
+    @include max-screen(390px) {
+      margin-left: 125px;
+    }
+  }
+
   &:before {
     content: "";
     display: inline-block;
@@ -691,29 +759,35 @@ footer {
     margin-right: 9px;
   }
 }
-  .fix3{
-    padding-top: 18px;
-    &:before{
-      content: "";
-      display: inline-block;
-      background-image: url("../images/in.svg");
-      width: 14px;
-      height: 13px;
-      margin-right: 9px;
-    }
-}
-.lets {
-  article {
-    max-height: 100px;
+
+.fix3 {
+  padding-top: 18px;
+  @include max-screen(470px) {
+    padding-bottom: 20px;
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/in.svg");
+    width: 14px;
+    height: 13px;
+    margin-right: 9px;
   }
 }
 
-//<a href="#">
-//<img src="images/fixbook.svg">
-//</a>
-//<a href="#">
-//<img src="images/twi.svg">
-//</a>
-//<a href="#">
-//<img src="images/in.svg">
-//</a>
+.lets {
+  article {
+    max-height: 100px;
+    @include max-screen(470px) {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .d_flex {
+    @include max-screen(470px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
