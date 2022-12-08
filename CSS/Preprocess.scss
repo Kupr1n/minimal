@@ -51,7 +51,7 @@ header {
 #navbar {
   list-style: none;
   display: flex;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     flex-direction: column;
   }
 }
@@ -548,12 +548,13 @@ footer {
   text-align: center;
   min-height: 600px;
   position: relative;
-  @include max-screen(768px){
-  flex-wrap: wrap;
+  @include max-screen(768px) {
+    flex-direction: column;
   }
-    article{
-      margin-right: 25px;
-    }
+
+  article {
+    margin-right: 25px;
+  }
 }
 
 .lets_title {
@@ -651,20 +652,64 @@ footer {
   padding-top: 28px;
 }
 
-.lets_social {
-  position: relative;
-}
-
 .fix_location {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: -80px;
-
+  list-style: none;
+  align-items: baseline;
+  li {
+    font-family: $main_font2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #212121;
+  }
 }
-
+.fix1 {
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/fixbook.svg");
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+  }
+}
+.fix2 {
+  padding-top: 18px;
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/twi.svg");
+    width: 14px;
+    height: 12px;
+    margin-right: 9px;
+  }
+}
+  .fix3{
+    padding-top: 18px;
+    &:before{
+      content: "";
+      display: inline-block;
+      background-image: url("../images/in.svg");
+      width: 14px;
+      height: 13px;
+      margin-right: 9px;
+    }
+}
 .lets {
   article {
     max-height: 100px;
   }
 }
+
+//<a href="#">
+//<img src="images/fixbook.svg">
+//</a>
+//<a href="#">
+//<img src="images/twi.svg">
+//</a>
+//<a href="#">
+//<img src="images/in.svg">
+//</a>
