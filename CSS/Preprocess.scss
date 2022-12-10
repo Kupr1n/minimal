@@ -46,9 +46,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include max-screen(480px) {
-
-  }
   @include max-screen(970px) {
     justify-content: space-around;
   }
@@ -244,8 +241,8 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  @include max-screen(900px) {
-    padding: 40px 20px;
+  @include max-screen(900px){
+    padding: 60px 20px ;
   }
 
   p {
@@ -385,19 +382,25 @@ footer {
   }
 }
 
-.project article {
+.project{
   background-color: #FFFFFF;
+  article {
+
+    @include max-screen(900px) {
+      margin-top: 10px;
+    }
+  }
 }
 
 .project_pictures2, .project_pictures3 {
   margin-top: 20px;
-  @include max-screen(900px) {
-    margin-top: 0;
-  }
 }
 
 .project_pictures3 {
   margin-bottom: 89px;
+  @include max-screen(900px) {
+    margin-bottom: 0;
+  }
 }
 
 .brands_article {
@@ -581,6 +584,7 @@ footer {
 .fix_img {
   position: absolute;
   align-items: center;
+  text-align: center;
   justify-content: center;
   right: 50%;
   margin-right: -50px;
@@ -600,12 +604,6 @@ footer {
   min-height: 600px;
   position: relative;
 }
-
-article {
-  margin-right: 25px;
-}
-
-
 .lets_title {
   font-family: $main_font1;
   font-style: normal;
