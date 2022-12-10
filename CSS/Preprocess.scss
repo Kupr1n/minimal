@@ -202,7 +202,10 @@ footer {
   background-image: url("../images/main_banner.jpg");
   background-size: cover;
   display: flex;
-
+  @include max-screen(900px) {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
   h1 {
     font-family: $main_font1;
     font-style: normal;

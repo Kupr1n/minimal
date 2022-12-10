@@ -191,6 +191,12 @@ footer form {
   background-size: cover;
   display: flex;
 }
+@media screen and (max-width: 900px) {
+  .main_banner {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
 .main_banner h1 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
